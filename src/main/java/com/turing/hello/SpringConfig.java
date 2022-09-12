@@ -1,0 +1,21 @@
+package com.turing.hello;
+
+import com.turing.hello.repository.MemberRepository;
+import com.turing.hello.repository.MemoryMemberRepository;
+import com.turing.hello.service.MemberService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SpringConfig {
+
+    @Bean
+    public MemberService memberService(){
+        return new MemberService(memberRepository());
+    }
+
+    @Bean
+    public MemberRepository memberRepository(){
+        return new MemoryMemberRepository();
+    }
+}

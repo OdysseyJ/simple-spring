@@ -1,6 +1,7 @@
 package com.turing.hello.repository;
 
 import com.turing.hello.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
