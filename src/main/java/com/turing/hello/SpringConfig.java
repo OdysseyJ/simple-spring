@@ -1,5 +1,6 @@
 package com.turing.hello;
 
+import com.turing.hello.aop.TimeTraceAop;
 import com.turing.hello.repository.JpaMemberRepository;
 import com.turing.hello.repository.MemberRepository;
 import com.turing.hello.service.MemberService;
